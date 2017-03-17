@@ -1,0 +1,420 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: $color
+	header, main, footer
+		display: block
+	.header
+		position: relative
+		.header__menu
+			padding-top: 10px
+			.toggle-menu
+				width: 50px
+				height: 50px
+				background: #362f2f
+				cursor: pointer
+				padding-top: 15px
+				position: relative
+				span
+					display: block
+					width: 21px
+					height: 3px
+					margin: 3px auto
+					background: #fefefe
+		.menu
+			display: none
+			list-style: none
+			margin: 0
+			padding: 0
+			position: absolute
+			top: 20px
+			left: 75px
+			text-transform: uppercase
+			font-size: 20px
+			width: 440px
+			li 
+				display: inline-block
+				padding: 0px 10px
+				a 
+					color: #362f2f
+					cursor: pointer
+	.header:after
+		content: ''
+		position: absolute
+		background: url("../img/logo-img.jpg") no-repeat
+		width: 100px
+		height: 100px
+		top: 0px
+		left: 45%
+		cursor: pointer
+		z-index: 1
+	.header__social
+		padding-top: 20px
+		.social
+			list-style: none
+			margin: 0
+			padding: 0
+			li 
+				display: inline-block
+				margin: 0px 6px
+				a 
+					display: block	
+					height: 100%
+					cursor pointer
+			.facebook
+				background: url("../img/sprite-soc.png") no-repeat 0px 0px
+				width: 6px
+				height: 12px
+			.twitter
+				background: url("../img/sprite-soc.png") no-repeat -25px 0px
+				width: 12px
+				height: 12px
+			.instagram
+				background: url("../img/sprite-soc.png") no-repeat -52px 0px
+				width: 11px
+				height: 12px
+			.inshine
+				background: url("../img/sprite-soc.png") no-repeat -79px 0px
+				width: 11px
+				height: 12px
+			.google
+				background: url("../img/sprite-soc.png") no-repeat -105px 0px
+				width: 12px
+				height: 12px
+			.e-mail
+				background: url("../img/sprite-soc.png") no-repeat -131px 0px
+				width: 13px
+				height: 12px
+	.main	
+		padding-top: 10px
+		.main__slider
+			position: relative
+			overflow: hidden
+			width: 100%
+			height: 100%
+			.flipbook
+				width: 1140px
+				height: 1140px
+				left: -570px
+				top: -570px
+				.page
+					width: 570px
+					height: 1140px
+					background: #fff no-repeat 100% 100%
+				.main__slider__comment
+					position: absolute
+					bottom: 0px
+					left: 0px
+					width: 263px
+					height: 263px
+					background: #fff
+					padding-left: 15px
+					padding-top: 65px
+					h4
+						text-transform: uppercase
+						margin: 0
+						font-weight: 400
+						font-size: 18px
+						line-height: 14px
+						span
+							font-size: 14px
+							font-style: italic
+							text-transform: none
+					p 
+						margin: 0
+						padding-top: 15px
+						line-height: 18px
+						display: block
+						width: 165px
+					.symbol
+						list-style: none
+						margin: 0
+						padding: 0
+						padding-top: 40px
+						li 
+							display: inline-block
+						.love
+							background: url("../img/symbol-sprite.png") no-repeat 0px 0px
+							width: 15px
+							height: 13px	
+							padding-right: 96px
+						.list
+							background: url("../img/symbol-sprite.png") no-repeat -96px 0px
+							width: 14px
+							height: 13px
+							padding-right: 96px
+						.mail
+							background: url("../img/symbol-sprite.png") no-repeat -196px 0px
+							width: 15px
+							height: 13px
+						a 
+							display: block
+							width: 15px
+							height: 100%
+							cursor: pointer				
+				.main__slider__comment:after
+					content: ''
+					position: absolute
+					background: url("../img/size-icon.png") no-repeat
+					width: 12px
+					height: 12px
+					top: 10px
+					right: 10px
+					cursor: pointer
+		.main__all-news
+			padding-top: 60px
+			.main__all-news__workshop
+				background: #000
+				padding: 0
+				max-width: 360px
+				p 
+					margin: 0
+					text-transform: uppercase
+					text-align: center
+					color: #fff
+				.size18
+					font-size: 18px
+					padding-top: 18px
+				.size16
+					font-size: 16px
+				.size14
+					font-size: 14px
+				a 
+					display: inline-block
+					color: #fff 
+					text-transform: uppercase
+					font-size: 14px
+					background: #c3a000
+					padding: 22px 15px
+					margin: 20px auto
+					margin-left: 145px
+					text-align: center
+					letter-spacing: 1px
+			.main__all-news__news
+				padding-left: 15px
+				h2
+					margin: 0
+					font-size: 16px
+					text-transform: uppercase
+					font-weight: 300
+					letter-spacing: 2px
+					padding-left: 20px
+					position: relative
+				ul
+					list-style: none
+					padding: 0
+					margin: 0
+					padding-top: 25px
+					padding-left: 10px
+					li 
+						overflow: hidden
+						padding-bottom: 45px
+						.img-news
+							float: left
+							padding-right: 30px
+						.text-news
+							float: left
+							width: 251px
+							h4 
+								margin: 0
+								font-size: 12px
+								text-transform: uppercase
+								line-height: 12px
+							span 
+								color: #7a7a7a
+								font-size: 11px
+								display: block
+							p 
+								margin: 0
+								font-size: 12px
+								line-height: 12px
+								letter-spacing: 1px
+							a 
+								color: #c3a000
+								font-size: 10px
+								font-weight: 700
+								padding-left: 10px
+								text-transform: uppercase
+				h2:after
+					content: ''
+					position: absolute
+					background: #c3a000
+					width: 165px
+					height: 1px
+					bottom: 0px
+					left: 10px
+			.main__all-news__info
+				padding-left: 20px
+				padding-top: 35px
+				.info-comment
+					overflow: hidden
+					.logo-img
+						float: left
+						padding-right: 40px
+					.info-block
+						float: left
+						padding-top: 13px
+						p 
+							margin: 0
+							padding-left: 23px
+							font-size: 12px
+							text-transform: uppercase
+							letter-spacing: 1px
+						.phone
+							position: relative
+						.e-mail 
+							text-transform: none
+							position: relative
+						.phone:after
+							content: ''
+							position: absolute
+							background: url("../img/phone-mail.png") no-repeat 0px 0px
+							width: 11px
+							height: 11px
+							top: 4px
+							left: -5px
+						.e-mail:after
+							content: ''
+							position: absolute
+							background: url("../img/phone-mail.png") no-repeat 0px -22px
+							width: 12px
+							height: 11px
+							top: 4px
+							left: -4px
+						.social
+							list-style: none
+							margin: 0
+							padding: 0
+							padding-top: 16px
+							li 
+								display: inline-block
+								margin: 0px 6px
+								a 
+									display: block	
+									height: 100%
+									cursor pointer
+							.facebook
+								background: url("../img/sprite-soc.png") no-repeat 0px 0px
+								width: 6px
+								height: 12px
+							.twitter
+								background: url("../img/sprite-soc.png") no-repeat -25px 0px
+								width: 12px
+								height: 12px
+							.instagram
+								background: url("../img/sprite-soc.png") no-repeat -52px 0px
+								width: 11px
+								height: 12px
+							.inshine
+								background: url("../img/sprite-soc.png") no-repeat -79px 0px
+								width: 11px
+								height: 12px
+							.google
+								background: url("../img/sprite-soc.png") no-repeat -105px 0px
+								width: 12px
+								height: 12px
+				.twitter-block
+					margin-top: 115px
+					position: relative
+					p 
+						margin: 0
+						font-size: 18px
+						font-style: italic
+						color: #c3a000
+						letter-spacing: 1px
+						line-height: 20px
+						text-align: center
+						font-weight: 300
+						span
+							color: #000
+				.twitter-block:after
+					content: ''
+					position: absolute
+					background: url("../img/twitter-icon.png") no-repeat 
+					width: 122px
+					height: 18px
+					top: -50px
+					left: 165px
+		.main__partners
+			padding-top: 75px
+			.partner1
+				background: url("../img/partners-bg.png") no-repeat 0px 0px
+				width: 189px
+				height: 36px
+			.partner2
+				background: url("../img/partners-bg.png") no-repeat -307px -3px
+				width: 189px
+				height: 36px
+			.partner3
+				background: url("../img/partners-bg.png") no-repeat -609px 5px
+				width: 199px
+				height: 36px
+			.partner4
+				background: url("../img/partners-bg.png") no-repeat -921px 2px
+				width: 186px
+				height: 36px
+			a
+				display: block
+				cursor: pointer
+				height: 100%
+	.footer 
+		padding-top: 115px 
+		p 
+			margin: 0
+			font-size: 15px
+			line-height: 17px
+			text-align: center
+			color: #000
+			position: relative
+		span
+			font-size: 15px
+			text-align: center
+			color: #000
+			padding-top: 50px
+			display: block
+		p:after
+			content: ''
+			position: absolute
+			background: url("../img/love-icon.png") no-repeat 
+			width: 14px
+			height: 12px
+			top: 2px
+			right: 41%
+
+
+@import "media" // Всегда в конце
