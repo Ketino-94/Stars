@@ -33,24 +33,7 @@ $(function() {
 	});
 
 
-	$('.main__slider').slick({
-	  dots: true,
-	  infinite: true,
-	  speed: 500,
-	  fade: true,
-	  cssEase: 'linear',
-	  prevArrow: '<button type="button" class="slick-prev"></button>',
-	  nextArrow: '<button type="button" class="slick-next"></button>',
-	});
 
-
-	$('.main__slider__comment .symbol a').on('click', function(){
-		$('.main__slider__comment').fadeOut();
-	});
-
-	$('.second-effect:hover .mask .info').magnificPopup({
-		type : 'image'
-	});
 	
 	
 });
