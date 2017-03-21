@@ -1,0 +1,218 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: $color
+	header, main, footer
+		display: block
+	.header
+		position: relative
+		.header__menu
+			padding-top: 10px
+			.toggle-menu
+				width: 50px
+				height: 50px
+				background: #362f2f
+				cursor: pointer
+				padding-top: 15px
+				position: relative
+				span
+					display: block
+					width: 21px
+					height: 3px
+					margin: 3px auto
+					background: #fefefe
+		.menu
+			display: none
+			list-style: none
+			margin: 0
+			padding: 0
+			position: absolute
+			top: 20px
+			left: 75px
+			text-transform: uppercase
+			font-size: 20px
+			width: 440px
+			li 
+				display: inline-block
+				padding: 0px 10px
+				a 
+					color: #362f2f
+					cursor: pointer
+		
+		.header__social
+			padding-top: 20px
+			.social
+				list-style: none
+				margin: 0
+				padding: 0
+				li 
+					display: inline-block
+					margin: 0px 6px
+					a 
+						display: block	
+						height: 100%
+						cursor pointer
+				.facebook
+					background: url("../img/sprite-soc.png") no-repeat 0px 0px
+					width: 6px
+					height: 12px
+				.twitter
+					background: url("../img/sprite-soc.png") no-repeat -25px 0px
+					width: 12px
+					height: 12px
+				.instagram
+					background: url("../img/sprite-soc.png") no-repeat -52px 0px
+					width: 11px
+					height: 12px
+				.inshine
+					background: url("../img/sprite-soc.png") no-repeat -79px 0px
+					width: 11px
+					height: 12px
+				.google
+					background: url("../img/sprite-soc.png") no-repeat -105px 0px
+					width: 12px
+					height: 12px
+				.e-mail
+					background: url("../img/sprite-soc.png") no-repeat -131px 0px
+					width: 13px
+					height: 12px
+		.logo
+			position: absolute
+			background: url("../img/logo-img.jpg") no-repeat
+			width: 100px
+			height: 100px
+			top: 0px
+			left: 45%
+			cursor: pointer
+			z-index: 1
+	.main	
+		padding-top: 15px
+		padding-bottom: 50px
+		.main-portfolio
+			padding: 0
+			max-width: 380px
+			h3 
+				font-size: 24px
+				margin: 0
+				padding-top: 150px
+				text-transform: uppercase
+				letter-spacing: 1px
+			p 
+				margin: 0
+				font-size: 18px
+				text-transform: uppercase
+				letter-spacing: 2px
+			.item
+				display: inline-block
+				cursor: pointer
+				width: 380px
+				img
+					border: 0
+					margin: 0
+					padding: 0
+					display: inline-block
+					position: relative
+					overflow: hidden
+					max-width: 100%
+			.mask
+				width: 380px
+				height: 380px
+				position: absolute
+				overflow: hidden
+				top: 0
+				left: 0
+				.info
+					background: url("../img/link.png") no-repeat
+					width: 20px
+					height: 20px
+					display: inline-block
+		.second-effect
+			.mask
+				opacity: 0
+				overflow: visible
+				border: 0px solid rgba(0,0,0,0.7)
+				transition: all 0.4s ease-in-out
+				.info
+					position: relative
+					top: -10px
+					opacity: 0
+					transform: scale(0,0)
+					transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out
+		.second-effect:hover
+			.mask
+				opacity: 1
+				border: 190px solid rgba(0,0,0,0.7)
+				.info
+					opacity: 1
+					transform: scale(1,1)
+					transition-delay: 0.3s
+	.footer 
+		padding-top: 115px 
+		position: relative
+		p 
+			margin: 0
+			font-size: 15px
+			line-height: 17px
+			text-align: center
+			color: #000
+			position: relative
+		span
+			font-size: 15px
+			text-align: center
+			color: #000
+			padding-top: 50px
+			display: block
+		p:after
+			content: ''
+			position: absolute
+			background: url("../img/love-icon.png") no-repeat 
+			width: 14px
+			height: 12px
+			top: 2px
+			right: 41%
+		.scrollup
+			position: absolute
+			opacity: 0.8
+			background: #362f2f
+			padding: 10px 15px
+			cursor: pointer
+			top: 20px 
+			right: 15px
+
+
+@import "media" // Всегда в конце
