@@ -44,13 +44,6 @@ $(function() {
 	});
 
 
-	$('.main__slider__comment .symbol a').on('click', function(){
-		$('.main__slider__comment').fadeOut();
-	});
-
-	$('.second-effect:hover .mask .info').magnificPopup({
-		type : 'image'
-	});
 	
 	
 });
